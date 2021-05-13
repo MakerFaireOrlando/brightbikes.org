@@ -1,0 +1,92 @@
+<section class="blackLine">
+  <div class=blackLineDiv></div>
+</section>
+<section id="{{ section.section_id }}" class="page-section bg-dark text-white {{ section.background_style }}">
+  <div class="container text-center">
+    <h2 class="mb-4">{{ section.title }}!</h2>
+    {% include actions.html actions=section.actions %}
+  </div>
+  <div id="bikeDiv">
+    <svg id="wholeBike" width="207.12" height="134.29" version="1.1" viewBox="0 0 207.12 134.29"
+      xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <filter id="glow">
+          <fegaussianblur class="blur" result="coloredBlur" stddeviation="4"></fegaussianblur>
+          <femerge>
+            <femergenode in="coloredBlur"></femergenode>
+            <femergenode in="coloredBlur"></femergenode>
+            <femergenode in="coloredBlur"></femergenode>
+            <femergenode in="SourceGraphic"></femergenode>
+          </femerge>
+        </filter>
+        <style>
+          .cls-1 {
+            isolation: isolate;
+          }
+
+          .cls-2 {
+            fill: url(#radial-gradient);
+          }
+
+          .cls-3 {
+            fill: #008cff;
+          }
+
+          .cls-4 {
+            fill: #ff9100;
+          }
+
+          .cls-5 {
+            fill: #fff200;
+          }
+
+          .cls-6 {
+            mix-blend-mode: screen;
+          }
+
+          .cls-7 {
+            fill: #fff;
+          }
+        </style>
+      </defs>
+      <g class="cls-1" transform="translate(-96.585,-82.7)" style="isolation:isolate">
+        <g data-name="Layer 1">
+          <path id="bikeFrame" class="cls-5"
+            d="m240.59 129.08-6.57 7.5-14.2 16.17q-10.14 11.56-20.27 23.12a4.75 4.75 0 0 1-3.52 1.86h-19.83a37.7 37.7 0 1 1-74.28-11.89 36.28 36.28 0 0 1 16.66-23.38c10.2-6.37 21.12-7.42 32.57-3.67 0.11-0.2 0.23-0.42 0.34-0.64q4.11-8.65 8.24-17.33a66.11 66.11 0 0 0 3-6.79 2.24 2.24 0 0 0-0.12-2c-0.06-0.11-0.11-0.23-0.16-0.34l-3.76-7.84c-0.09-0.17-0.2-0.34-0.31-0.52h-9.31a2.22 2.22 0 0 1-2.48-2.51v-3.6a2.18 2.18 0 0 1 2.34-2.34q15.9 0 31.8 0a2.17 2.17 0 0 1 2.36 2.32v3.83a2.44 2.44 0 0 1-0.08 0.66 2.16 2.16 0 0 1-2.23 1.64h-14c1.62 3.38 3.19 6.63 4.74 9.85h63.89a4.58 4.58 0 0 0-0.13-0.53c-0.26-0.76-0.53-1.51-0.8-2.26q-3.13-8.63-6.26-17.31a3.94 3.94 0 0 0-3.95-2.75h-12.3a6.75 6.75 0 0 1-1.19-0.11 2 2 0 0 1-1.66-2q0-1.73 0-3.45a1.88 1.88 0 0 1 1.32-1.88 4.08 4.08 0 0 1 1.25-0.19h12.75a10.14 10.14 0 0 1 3 0.45 11.71 11.71 0 0 1 8 7.61q4.89 13.54 9.74 27.08l6.87 19.12c0.1 0.3 0.22 0.6 0.35 0.92a37.71 37.71 0 0 1 45.69 27.9 37.7 37.7 0 0 1-70.13 26.07 36.33 36.33 0 0 1-3.18-26.2c2.84-11.57 9.9-19.85 20.52-25.28-1.38-3.85-2.76-7.7-4.19-11.67a4.93 4.93 0 0 0-0.52 0.38zm16.31 21.42q3.93 10.93 7.84 21.87a3.91 3.91 0 0 1-1 4.39 3.78 3.78 0 0 1-6-1.5c-0.35-0.88-0.64-1.78-1-2.68l-7.99-22.5c-0.09-0.26-0.18-0.51-0.28-0.76-10.39 4.81-18.92 18.66-14.16 33.86a28.46 28.46 0 1 0 21.27-36.4c0.46 1.3 0.89 2.5 1.32 3.72zm-140.41 6a28.46 28.46 0 1 0 50.31 21.32h-27.93a3.75 3.75 0 0 1-3.36-1.76 3.61 3.61 0 0 1-0.23-3.71q2-4.1 3.88-8.2 3.79-8 7.58-16l0.32-0.73a28.36 28.36 0 0 0-30.57 9.06zm80.63 10.58 40.9-46.58h-62.9c7.31 15.58 14.64 31.03 22 46.58zm-21 2.88h13.86c-0.09-0.52-22-46.86-22.55-47.69l-9.42 19.81c10.3 6.52 16.39 15.78 18.11 27.91zm-22.14-19.45c-3.11 6.51-6.16 13-9.24 19.45h21.91a28.61 28.61 0 0 0-12.65-19.42z"
+            fill="#fff200" />
+          <path id="backWheel" class="cls-3"
+            style="fill-opacity: 0; stroke-width: 2; stroke: #008cff; filter: url(#glow);"
+            d="m138.81 214.18a39.47 39.47 0 1 1 39.46-39.47 39.51 39.51 0 0 1-39.46 39.47zm0-67.57a28.11 28.11 0 1 0 28.11 28.1 28.13 28.13 0 0 0-28.11-28.1z" />
+          <path id="frontWheel" class="cls-4"
+            style="fill-opacity: 0; stroke-width: 2; stroke: #ff9100; filter: url(#glow);"
+            d="m261.43 213.96a39.46 39.46 0 1 1 39.46-39.46 39.5 39.5 0 0 1-39.46 39.46zm0-67.57a28.11 28.11 0 1 0 28.11 28.11 28.14 28.14 0 0 0-28.11-28.11z" />
+          <path id="frontRim" class="cls-7"
+            d="m138.81 210.53a35.82 35.82 0 1 1 35.82-35.82 35.85 35.85 0 0 1-35.82 35.82zm0-68.72a32.91 32.91 0 1 0 32.91 32.9 32.94 32.94 0 0 0-32.91-32.9z"
+            fill="#fff" />
+          <path id="backRim" class="cls-7"
+            d="m261.43 210.53a35.82 35.82 0 1 1 35.81-35.82 35.86 35.86 0 0 1-35.81 35.82zm0-68.72a32.91 32.91 0 1 0 32.9 32.9 32.94 32.94 0 0 0-32.9-32.9z"
+            fill="#fff" />
+          <g id="frontSpokes" style="fill-opacity: 0; stroke-width: 2; stroke: #008cff; filter: url(#glow);">
+            <path d="m261.43 202.77v-56.378" />
+            <path d="m233.24 174.58h56.378" />
+            <path d="m241.5 154.65 39.865 39.865" />
+            <path d="m281.36 154.65-39.865 39.865" />
+            <circle cx="261.38" cy="174.67" r="3.3647" stroke-linejoin="round" stroke-width="3"
+              style="paint-order:stroke fill markers" />
+          </g>
+          <g id="backSpokes" style="fill-opacity: 0; stroke-width: 2; stroke: #ff9100; filter: url(#glow);">
+            <circle transform="translate(-122.62 .22)" cx="261.38" cy="174.67" r="3.3647" stroke-linejoin="round"
+              stroke-width="3" style="isolation:isolate;paint-order:stroke fill markers" />
+            <g stroke-width="2px">
+              <path d="m138.81 146.61v56.378" />
+              <path d="m167 174.8h-56.378" />
+              <path d="m158.74 194.73-39.865-39.865" />
+              <path d="m118.88 194.73 39.865-39.865" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </svg>
+  </div>
+
+</section>

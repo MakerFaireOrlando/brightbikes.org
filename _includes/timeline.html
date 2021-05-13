@@ -1,0 +1,37 @@
+<section
+  class="page-section {{ section.background_style }}"
+  id="{{ section.section_id }}"
+>
+  <div class="container">
+    <h2 class="text-center mt-0">{{ section.title }}</h2>
+    <p class="text-white-50">{{ section.text }}</p>
+    <hr class="divider my-4" />
+    <div class="row">
+        {% for action in section.actions %}
+        
+        <div id="videoHead" class="col-12 col-sm-12 ">
+        <div id="videoDiv">
+          <iframe id="videoFrame"
+            src="{{ action.url}}"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          >
+          </iframe>
+          <br /> <br />
+          </div>
+        </div>
+
+        <div style="display: block; margin: 0 auto; width: 60%; text-align: center;">
+          <div class="timeline-heading">
+            <h4>{{ action.title | markdownify }}</h4>
+          </div>
+          <div class="timeline-body text-align: center;">
+            <p class="text-white-50">{{ action.text | markdownify }}</p>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+  </div>
+</section>
