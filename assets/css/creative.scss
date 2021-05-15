@@ -657,8 +657,8 @@ pre code {
 .row {
     display: flex;
     flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
+    margin-right: -150px;
+    margin-left: -150px;
 }
 
 .no-gutters {
@@ -2483,12 +2483,12 @@ textarea.form-control.is-invalid {
     color: white;
     text-decoration: none;
 }
-
+/* 
 .btn:focus,
 .btn.focus {
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgba(0, 140, 255, 0.5);
-}
+} */
 
 .btn.disabled,
 .btn:disabled {
@@ -2519,10 +2519,9 @@ fieldset:disabled a.btn {
 
 .btn-primary:focus,
 .btn-primary.focus {
-    color: grey;
+    color: white;
     background-color: var(--orange);
     border-color: var(--orange);
-    box-shadow: 0 0 50px #ff9100;
 }
 
 .btn-primary.disabled,
@@ -2605,7 +2604,6 @@ fieldset:disabled a.btn {
     color: white;
     background-color: var(--blue);
     border-color: var(--blue);
-    box-shadow: 0 0 0 0.2rem rgba(72, 180, 97, 0.5);
 }
 
 .btn-success.disabled,
@@ -2767,10 +2765,9 @@ fieldset:disabled a.btn {
 
 .btn-light:focus,
 .btn-light.focus {
-    color: grey;
+    color: white;
     background-color: #4666FF;
     border-color: #4666FF;
-    box-shadow: 0 0 50px var(--blue);
 }
 
 .btn-light.disabled,
@@ -2809,10 +2806,9 @@ fieldset:disabled a.btn {
 
 .btn-dark:focus,
 .btn-dark.focus {
-    color: grey;
+    color: black;
     background-color: #FAED27;
     border-color: #FAED27;
-    box-shadow: 0 0 50px var(--yellow);
 }
 
 .btn-dark.disabled,

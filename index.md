@@ -25,18 +25,21 @@ sections:
     #background_style: bg-info
     title: Join Us!
     services:
-      - title: Maker Focused Community
-        text: BrightBikes is a program of The Maker Effect Foundation, a maker-focused 501(c)(3) nonprofit in Orlando, Florida.
-        icon: fa-cogs text-info
-      - title: Project Funding
-        text: This project is funded in part by Orange County Government through the Arts & Cultural Affairs Program.
-        icon: fa-hand-holding-usd
-      - title: Tutorials
-        text: Looking to build your own and don't know where to start? Watch some of our tutorials.
-        icon: fa-laptop-code
-      - title: Explore and Share
-        text: Find different places to ride and be a part of a growing community.
-        icon: fa-heart
+      - title: Maker-Focused Community
+        text: Build and test your bike with us at Maker FX Orlando or build at home. 
+        image: assets/img/logos/mfxLogo.png
+        url: 'http://www.makerfx.org/'
+        target: '_blank' 
+      - title: <br /> <br /> Videos
+        text: Take a look at some of our videos. Whether it is building your first bright bike or seeing what the community is up to. 
+        image: assets/img/logos/laptopCodeIcon.png
+        url: '#timeline'
+      - title: <br /> <br /> Explore and Share
+        target: ''
+        text: Be a part of a growing community and share your experiences by joining our Facebook group.
+        image: assets/img/logos/heartIcon.png
+        url: 'https://www.facebook.com/brightbikesorl'
+        target: '_blank'
 
   - type: portfolio.html
     # this section has always ID 'portfolio'
@@ -81,25 +84,22 @@ sections:
 
   - type: members.html
     section_id: members
-    title: Partners
+    title: Community Partners
     background_style: bg-info text-white
     members:
-      - title: Maker Effects Foundation
+      - title: <br /> <br /> The Maker Effect Foundation
         text: The Maker Effect is the sum of the personal growth, professional success, community development, and continuous innovation that results when makers learn, educate, share, and create together. 
         image: assets/img/logos/makerEffectFoundationLogo.png
         url: 'http://www.themakereffect.org/'
-      - title: Maker Faire Orlando
-        text: Maker Faire is the Greatest Show (and Tell) on Earth—a family-friendly festival of invention, creativity and resourcefulness, and a celebration of the Maker movement.
+      - title: <br /> Maker Faire Orlando
+        text:  Maker Faire is the Greatest Show (and Tell) on Earth—a family-friendly festival of invention, creativity and resourcefulness, and a celebration of the Maker movement.
         image: assets/img/logos/makerFaireOrlandoLogo.png
         url: 'https://www.makerfaireorlando.com/'
-      - title: Maker FX
-        text: MakerFX Makerspace is a community-driven makerspace with 3,500 sq. ft. of classroom, workshop and community space in South Orlando.
-        image: assets/img/logos/makerFXLogo.png
-        url: 'http://makerfx.org/'
-      - title: Robot Ruckus
-        text: Your favorite robots, destroying each other, for your amusement. 
-        image: assets/img/logos/robotRuckusRoundLogo.png
-        url: 'https://robotruckus.org/'
+      - title: <br /> Art & Culture Affiars
+        text: United Arts of Central Florida is a 501(c)(3) nonprofit organization and the one-stop-shop to support the arts, sciences and history in Lake, Orange, Osceola and Seminole counties.
+        image: assets/img/logos/artCulturalLeaperLogo.png
+        url: 'https://unitedarts.cc/'
+
 
 
   - type: timeline.html
@@ -130,19 +130,19 @@ sections:
         
 
 
-  - type: contact.html
-    section_id: contacts
-    title: Let's Get In Touch!
-    text: >-
-      Light Up Your Community! Check out our tutorials to add LEDs to your bike and get out to share your colors with your neighborhood, or join us for community light parades! 
-    actions:
-    - title: E-Mail
-      icon: fa-envelope
-      url: mailto:makers@makerfaireorlando.com
-    - title: Facebook
-      icon: fa-facebook 
-      icon_type: fab
-      url: 'https://www.facebook.com/brightbikesorl'
+ # - type: contact.html
+ #   section_id: contacts
+ #   title: Let's Get In Touch!
+ #   text: >-
+ #     Light Up Your Community! Check out our tutorials to add LEDs to your bike and get out to share your colors with your neighborhood, or join us for community light parades! 
+ #   actions:
+ #   - title: E-Mail
+ #     icon: fa-envelope
+ #     url: mailto:makers@makerfaireorlando.com
+ #   - title: Facebook
+ #     icon: fa-facebook 
+ #     icon_type: fab
+ #     url: 'https://www.facebook.com/brightbikesorl'
 
   
 
