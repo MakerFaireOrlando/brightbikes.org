@@ -12,7 +12,10 @@ header:
 sections:
   - type: aside.html
     section_id: aside
-    #title: Join the community on Facebook
+    bikeColors:
+      - frontWheel: red 
+      - backWheel: blue
+      #title: Join the community on Facebook
    # actions:
     #  - title: Facebook
      #   url: https://www.facebook.com/brightbikesorl
@@ -68,6 +71,10 @@ sections:
         text: Wall Street
         icon: 6.jpg
         url: '#'
+
+  - type: aside.html
+    section_id: aside
+
 
   - type: members.html
     section_id: members
