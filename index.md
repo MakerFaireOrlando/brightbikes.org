@@ -133,7 +133,7 @@ sections:
     title: Community Partners
     background_style: bg-info text-white
     members:
-      - title: <br /> <br /> The Maker Effect Foundation
+      - title: <br /> The Maker Effect Foundation
         text: The Maker Effect is the sum of the personal growth, professional success, community development, and continuous innovation that results when makers learn, educate, share, and create together. 
         image: assets/img/logos/makerEffectFoundationLogo.png
         url: 'http://www.themakereffect.org/'
