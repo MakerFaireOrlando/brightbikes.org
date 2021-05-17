@@ -1,12 +1,10 @@
 ---
 layout: home
-header:
-  title: BRiGHT BiKES
+header: 
+  title: LIGHT UP YOUR COMMUNITY!
   text: >
-    LIGHT UP YOUR COMMUNITY
-  action: # action button is optional
-    label: Find Out More
-    url: '#about'
+    We are building a fleet of art bikes with more than 1,600 LEDs each! These bikes will display patterns created by local interactive artists and you’ll see the bikes popping up at lots of iconic Orlando locations in the coming months. Send us a note to get involved!
+  
 
 
 sections:
@@ -104,7 +102,7 @@ sections:
 
   - type: timeline.html
     section_id: timeline
-    title: How-to
+    title: Videos
     background_style: bg-dark text-primary
     last_image: assets/img/timeline-end.png
     actions:

@@ -7,9 +7,11 @@ header:
   url: /#about
 - title: Join Us
   url: /#services
+- title: Photos
+  url: /#portfolio
 - title: Partners
   url: /#members
-- title: How-to
+- title: Videos
   url: /#timeline
 - title: Contacts
   url: /#contacts
