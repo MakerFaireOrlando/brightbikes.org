@@ -26,20 +26,25 @@ sections:
     title: Join Us!
     services:
       - title: Maker-Focused Community
-        text: Build and test your bike with us at Maker FX Orlando or build at home. 
+        text: Build and test your bright bike with us at Maker FX Orlando or build one at home. 
         image: assets/img/logos/mfxLogo.png
         url: 'http://www.makerfx.org/'
         target: '_blank' 
-      - title: <br /> <br /> Videos
-        text: Take a look at some of our videos. Whether it is building your first bright bike or seeing what the community is up to. 
+      - title: Videos
+        text: Whether it is building your first bright bike or seeing what the community is up to, watch some of our videos. 
         image: assets/img/logos/laptopCodeIcon.png
         url: '#timeline'
-      - title: <br /> <br /> Explore and Share
-        target: ''
+      - title: Explore and Share
+        target: '_blank'
         text: Be a part of a growing community and share your experiences by joining our Facebook group.
         image: assets/img/logos/heartIcon.png
         url: 'https://www.facebook.com/brightbikesorl'
+      - title: Reach Us
         target: '_blank'
+        text: For more information, contact us directly by sending an email.
+        image: assets/img/logos/envelope.png
+        url: 'mailto:name@domain'
+
 
   - type: portfolio.html
     # this section has always ID 'portfolio'
@@ -47,30 +52,30 @@ sections:
     #background_style: bg-dark
     projects:
       - title: Downtown Orlando
-        text: Lake Eola Park
+        text: Lake Eola Park <br /> <br /> <b> MakerFX </b> <br /> Neon 
         # the images are located in:
         # img/portfolio/fullsize
         # img/portfolio/thumbnails
         icon: 1.jpg
         url: '#'
       - title: Downtown Orlando
-        text: Wall Street
+        text: Wall Street <br /> <br /> <b> MakerFX </b> <br /> 1600 Pixel 
         icon: 2.jpg
         url: '#'
       - title: Downtown Orlando
-        text: Lake Eola Park
+        text: Lake Eola Park <br /> <br /> <b> Community Member </b> <br /> Diggz's Rudolph 
         icon: 3.jpg
         url: '#'
       - title: Downtown Orlando
-        text: Lake Eola Park
+        text: Lake Eola Park <br /> <br /> <b> MakerFX </b> <br /> Neon
         icon: 4.jpg
         url: '#'
       - title: Downtown Orlando
-        text: Wall Street
+        text: Wall Street <br /> <br /> <b> MakerFX </b> <br /> 1600 Pixel
         icon: 5.jpg
         url: '#'
       - title: Downtown Orlando
-        text: Wall Street
+        text: Wall Street <br /> <br /> <b> Community Member </b> <br /> Diggz's Rudolph 
         icon: 6.jpg
         url: '#'
 
