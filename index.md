@@ -87,6 +87,47 @@ sections:
         url: https://www.facebook.com/brightbikesorl
         class: btn-dark
 
+  - type: timeline.html
+    section_id: timeline
+    title: How-to
+    background_style: bg-dark text-primary
+#    last_image: assets/img/portfolio
+    projects:
+    - title: BrightBikes Review - Spokelit Disco & Bright Spokes lights
+      text: Quick and easy setup for lighting your bike. 
+          <br />
+          The two kits covered in this video - Spokelit Disco and Bright Spokes.
+      icon: diyKits.png
+      url: 'https://www.youtube.com/embed/_E--rsD7uEI'
+    - title: BrightBikes @ Retro City Cycles 9th Annual Christmas Light Ride
+      text: We took the prototype BrightBikes Pixel 1600 and the BrightBikes Neon to the Retro City Cycles 9th Annual Christmas Light Ride. 
+      icon: retroCityCyles9th.png
+      url: 'https://www.youtube.com/embed/2ACbHHIzHkk'
+    - title: BrightBikes LED Panel Build Timelapse
+      text:  Watch a member of the MakerFX team build an LED panel.
+      icon: ledPanelBuildTimelapse.png
+      url: 'https://www.youtube.com/embed/Gj1VI8PP7Xs'
+#    actions:
+#      - image: diyKits.png
+#        url: https://youtube.com/embed/_E--rsD7uEI
+#        title: >+
+#          **Build your first Bright Bike!**
+#        text: >-
+#          Quick and easy setup for lighting your bike. 
+#          <br />
+#          The two kits covered in this video: Spokelit Disco and Bright Spokes.
+#          <br />
+#          These Kits are available on Amazon.
+
+#          <br /><br />
+#          <a href="https://youtu.be/_E--rsD7uEI?t=46" target="_blank">0:46:</a> Install overview of the Spokelit Disco
+          
+#          <br /><br />
+#          <a href="https://youtu.be/_E--rsD7uEI?t=85" target="_blank">1:25:</a> Install overview of the Bright Spokes Lights#
+
+#          <br /><br />
+#          Spokelit Disco: <a href="https://amzn.to/3obxJ9o" target="_blank">https://amzn.to/3obxJ9o</a>
+     
   - type: members.html
     section_id: members
     title: Community Partners
@@ -104,35 +145,6 @@ sections:
         text: United Arts of Central Florida is a 501(c)(3) nonprofit organization and the one-stop-shop to support the arts, sciences and history in Lake, Orange, Osceola and Seminole counties.
         image: assets/img/logos/artCulturalLeaperLogo.png
         url: 'https://unitedarts.cc/'
-
-
-
-  - type: timeline.html
-    section_id: timeline
-    title: How-to
-    background_style: bg-dark text-primary
-    last_image: assets/img/timeline-end.png
-    actions:
-      - image: assets/img/portfolio/thumbnails/1.jpg
-        url: https://youtube.com/embed/_E--rsD7uEI
-        title: >+
-          **Build your first Bright Bike!**
-        text: >-
-          Quick and easy setup for lighting your bike. 
-          <br />
-          The two kits covered in this video: Spokelit Disco and Bright Spokes.
-          <br />
-          These Kits are available on Amazon.
-
-          <br /><br />
-          <a href="https://youtu.be/_E--rsD7uEI?t=46" target="_blank">0:46:</a> Install overview of the Spokelit Disco
-          
-          <br /><br />
-          <a href="https://youtu.be/_E--rsD7uEI?t=85" target="_blank">1:25:</a> Install overview of the Bright Spokes Lights
-
-          <br /><br />
-          Spokelit Disco: <a href="https://amzn.to/3obxJ9o" target="_blank">https://amzn.to/3obxJ9o</a>
-        
 
 
  # - type: contact.html
