@@ -3,7 +3,7 @@ layout: home
 header: 
   title: LIGHT UP YOUR COMMUNITY!
   text: >
-    We are building a fleet of art bikes with more than 1,600 LEDs each! These bikes will display patterns created by local interactive artists and you’ll see the bikes popping up at lots of iconic Orlando locations in the coming months. Send us a note to get involved!
+    Build and join a fleet of art bikes created by local communities in the Central Florida area!
   
 
 

@@ -75,9 +75,9 @@
 
 var colors = ["#ff9100","#fff200", "#008cff","#fff200", "#ff9100"];
 
-var copy = "LIGHT UP YOUR COMMUNITY!";
+var copy = "LIGHT UP YOUR";
 
-var copy = "COMMUNITY"
+var copy2 = "COMMUNITY!"
 
 
 var ww = canvas.width = window.innerWidth;
@@ -141,13 +141,15 @@ function onTouchMove(e){
   if(e.touches.length > 0 ){
     mouse.x = e.touches[0].clientX;
     mouse.y = e.touches[0].clientY;
+
   }
 }
 
-function onTouchEnd(e){
+ function onTouchEnd(e){
 mouse.x = -9999;
 mouse.y = -9999;
-}
+
+} 
 
 function initScene(){
   ww = canvas.width = window.innerWidth;
@@ -155,9 +157,10 @@ function initScene(){
 
   ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-  ctx.font = "bold "+(ww/10)+"px sans-serif";
+  ctx.font = "bold "+(ww/8)+"px sans-serif";
   ctx.textAlign = "center";
-  ctx.fillText(copy, ww/2, wh/2);
+  ctx.fillText(copy, ww/2, wh/3);
+  ctx.fillText(copy2, ww/2, wh/1.75);
 
   var data  = ctx.getImageData(0, 0, ww, wh).data;
   ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -191,10 +194,10 @@ function render(a) {
 };
 
 window.addEventListener("resize", initScene);
-window.addEventListener("mousemove", onMouseMove);
+/* window.addEventListener("mousemove", onMouseMove);
 window.addEventListener("touchmove", onTouchMove);
 window.addEventListener("click", onMouseClick);
-window.addEventListener("touchend", onTouchEnd);
+window.addEventListener("touchend", onTouchEnd); */
 initScene();
 initScene();
 requestAnimationFrame(render);

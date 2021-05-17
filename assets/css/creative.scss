@@ -10239,7 +10239,7 @@ hr.light {
 }
 
 .page-section {
-    padding: 8rem 0;
+    padding: 3rem 0;
 }
 
 #mainNav {
@@ -10275,6 +10275,7 @@ hr.light {
     #mainNav {
         box-shadow: none;
         background-color: transparent;
+        background: radial-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%)
     }
     #mainNav .navbar-brand {
         color: var(--pinkSwan);
