@@ -9,10 +9,10 @@ header:
   url: /#services
 - title: Photos
   url: /#portfolio
-- title: Partners
-  url: /#members
 - title: Videos
   url: /#timeline
+- title: Partners
+  url: /#members
 - title: Contacts
   url: /#contacts
 
