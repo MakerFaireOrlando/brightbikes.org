@@ -9,10 +9,16 @@ header:
 
 sections:
   - type: aside.html
-    section_id: aside
+    section_id: bike1
     bikeColors:
-      - frontWheel: red 
-      - backWheel: blue
+      bikeFrame: "#fff200"
+      frontWheel: "#ff9100"
+      frontSpokes: "#008cff"
+      frontRim: "#fff"
+      backWheel: "#008cff"
+      backSpokes:  "#ff9100"
+      backRim: "#fff"
+
       #title: Join the community on Facebook
    # actions:
     #  - title: Facebook
@@ -79,7 +85,15 @@ sections:
         url: '#'
 
   - type: aside.html
-    section_id: aside
+    section_id: bike2
+    bikeColors:
+      bikeFrame: red
+      frontWheel: purple
+      frontSpokes: red
+      frontRim: black
+      backWheel: red
+      backSpokes: purple
+      backRim: black
 
 
   - type: timeline.html
