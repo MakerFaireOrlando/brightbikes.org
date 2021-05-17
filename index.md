@@ -8,15 +8,16 @@ header:
 
 
 sections:
-  - type: call-to-action.html
-    section_id: about
-    background_style: bg-primary
-    title: Light up your community!
-    text: We are building a fleet of art bikes with more than 1,600 LEDs each! These bikes will display patterns created by local interactive artists and you'll see the bikes popping up at lots of iconic Orlando locations in the coming months. Send us a note to get involved! 
-    actions:
-      - title: Get involved!
-        url: mailto:makers@makerfaireorlando.com
-        class: btn-light
+  - type: aside.html
+    section_id: aside
+    bikeColors:
+      - frontWheel: red 
+      - backWheel: blue
+      #title: Join the community on Facebook
+   # actions:
+    #  - title: Facebook
+     #   url: https://www.facebook.com/brightbikesorl
+      #  class: btn-dark
 
   - type: services.html
     section_id: services
@@ -79,11 +80,7 @@ sections:
 
   - type: aside.html
     section_id: aside
-    title: Join the community on Facebook
-    actions:
-      - title: Facebook
-        url: https://www.facebook.com/brightbikesorl
-        class: btn-dark
+
 
   - type: timeline.html
     section_id: timeline

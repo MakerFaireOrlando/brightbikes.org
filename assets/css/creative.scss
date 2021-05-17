@@ -10422,27 +10422,26 @@ header.masthead h1 {
     color: var(--pinkSwan);
 }
 
-
-#bikeSVG{
+.bikeSVG{
     width: 300px;
     position: relative;
    // animation: mymove 15s ease-in-out infinite;
 }
 
-#wholeBike{
+.wholeBike{
     width: 300px;
     position: relative;
     animation: moveBike 20s ease-in-out infinite;
 }
 
-#frontSpokes, #backSpokes{
+.frontSpokes, .backSpokes{
 animation:wheelSpin 2s infinite linear;
 transform-origin: center;
 transform-box: fill-box; 
 }
 
-#bikeDiv{
-    bottom: -131px;
+.bikeDiv{
+    padding: 3.5rem 0;
     position: relative;
     overflow: hidden;
 }
