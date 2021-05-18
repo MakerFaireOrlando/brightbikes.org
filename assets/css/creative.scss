@@ -10023,11 +10023,12 @@ button.bg-dark:focus {
 }
 
 .masthead .row {
-    padding-top: 257px;
+    padding-top: 0;
 }
 
 .masthead .divider {
-    margin-top: -109px !important;
+   margin-top: 0;
+   // -109px !important;
 }
 
 #scene{
