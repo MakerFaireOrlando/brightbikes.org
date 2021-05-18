@@ -545,6 +545,7 @@ mark,
 .img-fluid {
     max-width: 100%;
     height: auto;
+    
 }
 
 .img-thumbnail {
@@ -10443,6 +10444,7 @@ header.masthead h1 {
 #portfolio .container-lg .portfolio-box:hover .portfolio-box-caption,
 #portfolio .container-xl .portfolio-box:hover .portfolio-box-caption {
     opacity: 1;
+    cursor: pointer;
 }
 
 .text-white-75 {
@@ -10465,6 +10467,22 @@ header.masthead h1 {
 animation:wheelSpin 2s infinite linear;
 transform-origin: center;
 transform-box: fill-box; 
+}
+
+@media (max-width: 992px) {
+    .wholeBike{
+        width: 300px;
+        position: relative;
+        animation: moveBike 10s ease-in-out infinite;
+    }
+}
+
+@media (max-width: 576px) {
+    .wholeBike{
+        width: 300px;
+        position: relative;
+        animation: moveBike 5s ease-in-out infinite;
+    }
 }
 
 .bikeDiv{
