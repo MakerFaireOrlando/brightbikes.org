@@ -1,8 +1,5 @@
-<section
-  class="page-section {{ section.background_style }}"
-  id="{{ section.section_id }}"
->
-<!--   <div class="container">
+ <section class="page-section {{ section.background_style }}" id="{{ section.section_id }}"> 
+  <!--   <div class="container">
     <h2 class="text-center mt-0">{{ section.title }}</h2>
     <p class="text-white-50">{{ section.text }}</p>
     <hr class="divider my-4" />
@@ -39,8 +36,9 @@
       <div class="row no-gutters">
         {% for proj in section.projects %}
         <div class="col-lg-4 col-sm-6">
-          <a class="portfolio-box" href="{{ proj.url }}">
-            <img class="img-fluid" src="assets/img/portfolio/thumbnails/{{ proj.icon }}" alt="">
+          <a class="portfolio-box" onclick="videoModal( '{{ proj.url }}')">
+
+            <img class="img-fluid" src="assets/img/portfolio/thumbnails/{{ proj.icon }}" alt="" />
             <div class="portfolio-box-caption">
               <div class="project-category text-white-50">
                 {{ proj.title }}
@@ -54,6 +52,18 @@
         {% endfor %}
       </div>
     </div>
-<!--   </div> -->
-  
-</section>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <iframe id="videoFrame" width="100%" height="100%" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+
+
+ </section> 
