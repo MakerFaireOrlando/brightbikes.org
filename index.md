@@ -1,7 +1,8 @@
 ---
 layout: home
 header: 
-  title: LIGHT UP YOUR COMMUNITY!
+  titleUpper: LIGHT UP YOUR
+  titleLower: COMMUNITY!
   text: >
     Build and join a fleet of art bikes created by local communities in the Central Florida area!
   

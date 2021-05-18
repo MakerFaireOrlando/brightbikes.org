@@ -96,7 +96,8 @@ function Particle(x,y){
   this.vy = (Math.random()-0.5)*20;
   this.accX = 0;
   this.accY = 0;
-  this.friction = Math.random()*0.05 + 0.94;
+  this.friction = .93;
+  //Math.random()*0.03 + .97;
 
   this.color = colors[Math.floor(Math.random()*6)];
 }
@@ -104,8 +105,8 @@ function Particle(x,y){
 Particle.prototype.render = function() {
 
 
-  this.accX = (this.dest.x - this.x)/1000;
-  this.accY = (this.dest.y - this.y)/1000;
+  this.accX = (this.dest.x - this.x)/100;
+  this.accY = (this.dest.y - this.y)/100;
   this.vx += this.accX;
   this.vy += this.accY;
   this.vx *= this.friction;
@@ -123,7 +124,7 @@ Particle.prototype.render = function() {
   var b = this.y - mouse.y;
 
   var distance = Math.sqrt( a*a + b*b );
-  if(distance<(radius*70)){
+  if(distance<(radius)){
     this.accX = (this.x - mouse.x)/100;
     this.accY = (this.y - mouse.y)/100;
     this.vx += this.accX;
