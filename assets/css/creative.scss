@@ -5954,6 +5954,7 @@ a.badge-dark.focus {
     color: black;
     text-shadow: 0 1px 0 white;
     opacity: 0.5;
+    cursor: pointer;
 }
 
 .close:hover {
@@ -10559,4 +10560,12 @@ transform-box: fill-box;
 
 #heroText{
     animation: neonHero .08s ease-in-out infinite alternate;
+}
+
+
+.mfp-zoom-out-cur, .mfp-zoom-out-cur .mfp-image-holder .mfp-close {
+    //cursor: -moz-zoom-out;
+    /* cursor: -webkit-zoom-out; */
+    /* cursor: zoom-out; */
+    cursor: pointer;
 }
