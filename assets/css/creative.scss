@@ -10024,9 +10024,6 @@ button.bg-dark:focus {
     font-style: italic !important;
 }
 
-.text-white {
-    color: var(--pinkSwan) !important;
-}
 
 .masthead .row {
     padding-top: 0;
@@ -10478,13 +10475,6 @@ transform-box: fill-box;
     }
 }
 
-@media (max-width: 576px) {
-    .wholeBike{
-        width: 300px;
-        position: relative;
-        animation: moveBike 5s ease-in-out infinite;
-    }
-}
 
 .bikeDiv{
     padding: 3.5rem 0;
