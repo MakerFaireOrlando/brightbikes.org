@@ -31,12 +31,12 @@ sections:
     title: Join Us!
     services:
       - title: Maker-Focused Community
-        text: Build and test your bright bike with us at Maker FX Orlando or build one at home. 
+        text: Build and test your brightbike with us at MakerFX Orlando or build one at home. 
         image: assets/img/logos/mfxLogo.png
         url: 'http://www.makerfx.org/'
         target: '_blank' 
       - title: Videos
-        text: Whether it is building your first bright bike or seeing what the community is up to, watch some of our videos. 
+        text: Whether it is building your first brightbike or seeing what the community is up to, watch some of our videos. 
         image: assets/img/logos/laptopCodeIcon.png
         url: '#timeline'
       - title: Explore and Share
