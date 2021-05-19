@@ -154,7 +154,7 @@ sections:
       - title: <br /> Orange County Arts & Cultural Affairs
         text: This project is funded in part by Orange County Government through the Arts & Cultural Affairs Program.
         image: assets/img/logos/artCulturalLeaperLogo.png
-        url: 'https://unitedarts.cc/'
+        url: 'https://www.orangecountyfl.net/CultureParks/ArtsCulture.aspx'
 
 
  # - type: contact.html
