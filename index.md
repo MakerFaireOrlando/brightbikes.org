@@ -4,7 +4,7 @@ header:
   titleUpper: LIGHT UP YOUR
   titleLower: COMMUNITY!
   text: >
-    Build and join a fleet of art bikes created by local makers in the Central Florida!
+    Build and join a fleet of art bikes created by Central Florida makers!
 image: assets/img/portfolio/carousel/1.jpg
 
 
