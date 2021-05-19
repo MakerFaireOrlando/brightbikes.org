@@ -42,7 +42,7 @@ sections:
         url: '#timeline'
       - title: Explore and Share
         target: '_blank'
-        text: Be a part of a growing community and share your experiences by joining our Facebook group.
+        text: Be a part of a growing community and share your experiences by connecting on our Facebook page.
         image: assets/img/logos/heartIcon.png
         url: 'https://www.facebook.com/brightbikesorl'
       - title: Reach Us
