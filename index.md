@@ -49,7 +49,7 @@ sections:
         target: '_blank'
         text: For more information, contact us directly by sending an email.
         image: assets/img/logos/envelope.png
-        url: 'mailto:name@domain'
+        url: 'mailto:makers@makerfaireorlando.com'
 
 
   - type: portfolio.html
