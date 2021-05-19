@@ -3,11 +3,11 @@
     * Copyright 2013-2020 Start Bootstrap
     * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-creative/blob/master/LICENSE)
     */
-    (function($) {
+(function ($) {
   "use strict"; // Start of use strict
 
   // Smooth scrolling using jQuery easing
-  $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
+  $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
@@ -21,7 +21,7 @@
   });
 
   // Closes responsive menu when a scroll trigger link is clicked
-  $('.js-scroll-trigger').click(function() {
+  $('.js-scroll-trigger').click(function () {
     $('.navbar-collapse').collapse('hide');
   });
 
@@ -32,7 +32,7 @@
   });
 
   // Collapse Navbar
-  var navbarCollapse = function() {
+  var navbarCollapse = function () {
     if ($("#mainNav").offset().top > 100) {
       $("#mainNav").addClass("navbar-scrolled");
     } else {
@@ -65,139 +65,143 @@
 
   ////////////////////PARTICLES 1//////////////////////////
   var canvas = document.getElementById("scene"),
-  ctx = canvas.getContext("2d"),
-  particles = [],
-  amount = 0,
-  mouse = {x:0,y:0},
-  radius = 1;
+    ctx = canvas.getContext("2d"),
+    particles = [],
+    amount = 0,
+    mouse = { x: 0, y: 0 },
+    radius = 1;
 
   var dummy = 0;
 
-var colors = ["#ff9100","#fff200", "#008cff","#fff200", "#ff9100"];
+  var colors = ["#ff9100", "#fff200", "#008cff", "#fff200", "#ff9100"];
 
-var copy = "LIGHT UP YOUR COMMUNITY!";
+  var copy = "LIGHT UP YOUR";
 
-var copy = "COMMUNITY"
-
-
-var ww = canvas.width = window.innerWidth;
-var wh = canvas.height = window.innerHeight;
-
-function Particle(x,y){
-
-  this.x =  Math.random()*ww;
-  this.y =  Math.random()*wh;
-  this.dest = {
-    x : x,
-    y: y
-  };
-  this.r =  Math.random()*5 + 2;
-  this.vx = (Math.random()-0.5)*20;
-  this.vy = (Math.random()-0.5)*20;
-  this.accX = 0;
-  this.accY = 0;
-  this.friction = Math.random()*0.05 + 0.94;
-
-  this.color = colors[Math.floor(Math.random()*6)];
-}
-
-Particle.prototype.render = function() {
+  var copy2 = "COMMUNITY!"
 
 
-  this.accX = (this.dest.x - this.x)/1000;
-  this.accY = (this.dest.y - this.y)/1000;
-  this.vx += this.accX;
-  this.vy += this.accY;
-  this.vx *= this.friction;
-  this.vy *= this.friction;
+  var ww = canvas.width = window.innerWidth;
+  var wh = canvas.height = window.innerHeight;
 
-  this.x += this.vx;
-  this.y +=  this.vy;
+  function Particle(x, y) {
 
-  ctx.fillStyle = this.color;
-  ctx.beginPath();
-  ctx.arc(this.x, this.y, this.r, Math.PI * 2, false);
-  ctx.fill();
+    this.x = Math.random() * ww;
+    this.y = Math.random() * wh;
+    this.dest = {
+      x: x,
+      y: y
+    };
+    this.r = Math.random() * 5 + 2;
+    this.vx = (Math.random() - 0.5) * 20;
+    this.vy = (Math.random() - 0.5) * 20;
+    this.accX = 0;
+    this.accY = 0;
+    this.friction = .93;
+    //Math.random()*0.03 + .97;
 
-  var a = this.x - mouse.x;
-  var b = this.y - mouse.y;
+    this.color = colors[Math.floor(Math.random() * 6)];
+  }
 
-  var distance = Math.sqrt( a*a + b*b );
-  if(distance<(radius*70)){
-    this.accX = (this.x - mouse.x)/100;
-    this.accY = (this.y - mouse.y)/100;
+  Particle.prototype.render = function () {
+
+
+    this.accX = (this.dest.x - this.x) / 100;
+    this.accY = (this.dest.y - this.y) / 100;
     this.vx += this.accX;
     this.vy += this.accY;
+    this.vx *= this.friction;
+    this.vy *= this.friction;
+
+    this.x += this.vx;
+    this.y += this.vy;
+
+    ctx.fillStyle = this.color;
+    ctx.beginPath();
+    ctx.arc(this.x, this.y, this.r, Math.PI * 2, false);
+    ctx.fill();
+
+    var a = this.x - mouse.x;
+    var b = this.y - mouse.y;
+
+    var distance = Math.sqrt(a * a + b * b);
+    if (distance < (radius)) {
+      this.accX = (this.x - mouse.x) / 100;
+      this.accY = (this.y - mouse.y) / 100;
+      this.vx += this.accX;
+      this.vy += this.accY;
+    }
+
   }
 
-}
-
-function onMouseMove(e){
-  mouse.x = e.clientX;
-  mouse.y = e.clientY;
-}
-
-function onTouchMove(e){
-  if(e.touches.length > 0 ){
-    mouse.x = e.touches[0].clientX;
-    mouse.y = e.touches[0].clientY;
+  function onMouseMove(e) {
+    mouse.x = e.clientX;
+    mouse.y = e.clientY;
   }
-}
 
-function onTouchEnd(e){
-mouse.x = -9999;
-mouse.y = -9999;
-}
+  function onTouchMove(e) {
+    if (e.touches.length > 0) {
+      mouse.x = e.touches[0].clientX;
+      mouse.y = e.touches[0].clientY;
 
-function initScene(){
-  ww = canvas.width = window.innerWidth;
-  wh = canvas.height = window.innerHeight;
-
-  ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-  ctx.font = "bold "+(ww/10)+"px sans-serif";
-  ctx.textAlign = "center";
-  ctx.fillText(copy, ww/2, wh/2);
-
-  var data  = ctx.getImageData(0, 0, ww, wh).data;
-  ctx.clearRect(0, 0, canvas.width, canvas.height);
-  ctx.globalCompositeOperation = "screen";
-
-  particles = [];
-  for(var i=0;i<ww;i+=Math.round(ww/150)){
-    for(var j=0;j<wh;j+=Math.round(ww/150)){
-      if(data[ ((i + j*ww)*4) + 3] > 150){
-        particles.push(new Particle(i,j));
-      }
     }
   }
-  amount = particles.length;
 
-}
+  function onTouchEnd(e) {
+    mouse.x = -9999;
+    mouse.y = -9999;
 
-function onMouseClick(){
-  radius++;
-  if(radius ===5){
-    radius = 0;
   }
-}
 
-function render(a) {
+  function initScene() {
+    ww = canvas.width = window.innerWidth;
+    wh = canvas.height = window.innerHeight;
+
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    ctx.font = "bold " + (ww / 8) + "px sans-serif";
+    ctx.textAlign = "center";
+    ctx.fillText(copy, ww / 2, wh / 3);
+    ctx.fillText(copy2, ww / 2, wh / 1.75);
+
+    var data = ctx.getImageData(0, 0, ww, wh).data;
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.globalCompositeOperation = "screen";
+
+    particles = [];
+    for (var i = 0; i < ww; i += Math.round(ww / 150)) {
+      for (var j = 0; j < wh; j += Math.round(ww / 150)) {
+        if (data[((i + j * ww) * 4) + 3] > 150) {
+          particles.push(new Particle(i, j));
+        }
+      }
+    }
+    amount = particles.length;
+
+  }
+
+  function onMouseClick() {
+    radius++;
+    if (radius === 5) {
+      radius = 0;
+    }
+  }
+
+  function render(a) {
+    requestAnimationFrame(render);
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    for (var i = 0; i < amount; i++) {
+      particles[i].render();
+    }
+  };
+
+  window.addEventListener("resize", initScene);
+  /* window.addEventListener("mousemove", onMouseMove);
+  window.addEventListener("touchmove", onTouchMove);
+  window.addEventListener("click", onMouseClick);
+  window.addEventListener("touchend", onTouchEnd); */
+  initScene();
+  initScene();
   requestAnimationFrame(render);
-  ctx.clearRect(0, 0, canvas.width, canvas.height);
-  for (var i = 0; i < amount; i++) {
-    particles[i].render();
-  }
-};
-
-window.addEventListener("resize", initScene);
-window.addEventListener("mousemove", onMouseMove);
-window.addEventListener("touchmove", onTouchMove);
-window.addEventListener("click", onMouseClick);
-window.addEventListener("touchend", onTouchEnd);
-initScene();
-initScene();
-requestAnimationFrame(render);
 
   ////////////////////////////////////////////////
 
@@ -206,3 +210,29 @@ requestAnimationFrame(render);
 
 })(jQuery); // End of use strict
 
+
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+function videoModal(videoURL) {
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+  // Get the modal
+  var modal = document.getElementById("myModal");
+  // Get the button that opens the modal
+  var vidFrame = document.getElementById("videoFrame");
+  console.log(videoURL);
+  console.log(vidFrame);
+  vidFrame.setAttribute("src", videoURL);
+  modal.style.display = "block";
+
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function () {
+    modal.style.display = "none";
+  }
+}

@@ -126,6 +126,10 @@ p {
   color: var(--pinkSwan);
 }
 
+#timeline{
+  padding: 0;  
+}
+
 abbr[title],
 abbr[data-original-title] {
     text-decoration: underline;
@@ -541,6 +545,7 @@ mark,
 .img-fluid {
     max-width: 100%;
     height: auto;
+    
 }
 
 .img-thumbnail {
@@ -657,8 +662,8 @@ pre code {
 .row {
     display: flex;
     flex-wrap: wrap;
-    margin-right: -150px;
-    margin-left: -150px;
+    //margin-right: -150px;
+   // margin-left: -150px;
 }
 
 .no-gutters {
@@ -4800,7 +4805,28 @@ input[type=button].btn-block {
     }
   }
   
-  
+  @keyframes neonHero {
+    from {
+      color: #c6e2ff;
+      text-shadow:
+      0 0 6px rgba(202,228,225,0.92),
+      0 0 30px rgba(202,228,225,0.34),
+      0 0 12px rgba(30,132,242,0.52),
+      0 0 21px rgba(30,132,242,0.92),
+      0 0 34px rgba(30,132,242,0.78),
+      0 0 54px rgba(30,132,242,0.92);
+    }
+    to {
+      color: #c6e2ff;
+      text-shadow:
+    0 0 6px rgba(202,228,225,0.98),
+    0 0 30px rgba(202,228,225,0.42),
+    0 0 12px rgba(30,132,242,0.58),
+    0 0 22px rgba(30,132,242,0.84),
+    0 0 38px rgba(30,132,242,0.88),
+    0 0 60px rgba(30,132,242,1);
+    }
+  }
   
 ///////////END////////////////////
 
@@ -5928,6 +5954,7 @@ a.badge-dark.focus {
     color: black;
     text-shadow: 0 1px 0 white;
     opacity: 0.5;
+    cursor: pointer;
 }
 
 .close:hover {
@@ -9997,16 +10024,14 @@ button.bg-dark:focus {
     font-style: italic !important;
 }
 
-.text-white {
-    color: var(--pinkSwan) !important;
-}
 
 .masthead .row {
-    padding-top: 257px;
+    padding-top: 0;
 }
 
 .masthead .divider {
-    margin-top: -109px !important;
+   margin-top: 0;
+   // -109px !important;
 }
 
 #scene{
@@ -10239,7 +10264,7 @@ hr.light {
 }
 
 .page-section {
-    padding: 8rem 0;
+    padding: 3rem 0;
 }
 
 #mainNav {
@@ -10275,6 +10300,7 @@ hr.light {
     #mainNav {
         box-shadow: none;
         background-color: transparent;
+        background: radial-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%)
     }
     #mainNav .navbar-brand {
         color: var(--pinkSwan);
@@ -10416,6 +10442,7 @@ header.masthead h1 {
 #portfolio .container-lg .portfolio-box:hover .portfolio-box-caption,
 #portfolio .container-xl .portfolio-box:hover .portfolio-box-caption {
     opacity: 1;
+    cursor: pointer;
 }
 
 .text-white-75 {
@@ -10439,6 +10466,15 @@ animation:wheelSpin 2s infinite linear;
 transform-origin: center;
 transform-box: fill-box; 
 }
+
+@media (max-width: 992px) {
+    .wholeBike{
+        width: 300px;
+        position: relative;
+        animation: moveBike 10s ease-in-out infinite;
+    }
+}
+
 
 .bikeDiv{
     padding: 3.5rem 0;
@@ -10472,32 +10508,54 @@ transform-box: fill-box;
 }
 
 
-#videoHead {
-    max-width: 525px;
-    margin: 0px auto;
-    min-width:0px !important;
-    min-height: 0px !important;
-    padding-bottom: 2%;
-  }
-  
-  #videoHead > #videoDiv {
-    position: relative;
-    padding-bottom: 75%;
-    height: 0px;
-  }
-  
-  #videoFrame {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-  }
-
-
-  /////////////////////////////////////////////////////
 
 #scene{
     width: 36vw;
     height: 36vh;
+}
+
+/* The Modal (background) */
+.modal {
+	display: none;
+	/* Hidden by default */
+	position: fixed;
+	/* Stay in place */
+	z-index: 999999;
+	/* Sit on top */
+	padding-top: 100px;
+	/* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100vw;
+	/* Full width */
+	height: 100vh;
+	/* Full height */
+	overflow: auto;
+	/* Enable scroll if needed */
+	background-color: rgb(0, 0, 0);
+	/* Fallback color */
+	background-color: rgba(0, 0, 0, 0.9);
+	/* Black w/ opacity */
+}
+
+  /* Modal Content (image) */
+.modal-content {
+	margin: auto;
+	display: block;
+	width: 80%;
+    height: 60%;
+	max-width: 700px;
+	top: 20%;
+}
+
+#heroText{
+    animation: neonHero .08s ease-in-out infinite alternate;
+}
+
+
+.mfp-zoom-out-cur, .mfp-zoom-out-cur .mfp-image-holder .mfp-close {
+    //cursor: -moz-zoom-out;
+    /* cursor: -webkit-zoom-out; */
+    /* cursor: zoom-out; */
+    cursor: pointer;
 }

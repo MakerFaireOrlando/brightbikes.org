@@ -1,18 +1,25 @@
 ---
 layout: home
 header: 
-  title: LIGHT UP YOUR COMMUNITY!
+  titleUpper: LIGHT UP YOUR
+  titleLower: COMMUNITY!
   text: >
-    We are building a fleet of art bikes with more than 1,600 LEDs each! These bikes will display patterns created by local interactive artists and you’ll see the bikes popping up at lots of iconic Orlando locations in the coming months. Send us a note to get involved!
+    Build and join a fleet of art bikes created by local communities in the Central Florida area!
   
 
 
 sections:
   - type: aside.html
-    section_id: aside
+    section_id: bike1
     bikeColors:
-      - frontWheel: red 
-      - backWheel: blue
+      bikeFrame: "#fff200"
+      frontWheel: "#ff9100"
+      frontSpokes: "#008cff"
+      frontRim: "#fff"
+      backWheel: "#008cff"
+      backSpokes:  "#ff9100"
+      backRim: "#fff"
+
       #title: Join the community on Facebook
    # actions:
     #  - title: Facebook
@@ -25,12 +32,12 @@ sections:
     title: Join Us!
     services:
       - title: Maker-Focused Community
-        text: Build and test your bright bike with us at Maker FX Orlando or build one at home. 
+        text: Build and test your brightbike with us at MakerFX Orlando or build one at home. 
         image: assets/img/logos/mfxLogo.png
         url: 'http://www.makerfx.org/'
         target: '_blank' 
       - title: Videos
-        text: Whether it is building your first bright bike or seeing what the community is up to, watch some of our videos. 
+        text: Whether it is building your first brightbike or seeing what the community is up to, watch some of our videos. 
         image: assets/img/logos/laptopCodeIcon.png
         url: '#timeline'
       - title: Explore and Share
@@ -79,7 +86,15 @@ sections:
         url: '#'
 
   - type: aside.html
-    section_id: aside
+    section_id: bike2
+    bikeColors:
+      bikeFrame: red
+      frontWheel: purple
+      frontSpokes: red
+      frontRim: black
+      backWheel: red
+      backSpokes: purple
+      backRim: black
 
 
   - type: timeline.html
