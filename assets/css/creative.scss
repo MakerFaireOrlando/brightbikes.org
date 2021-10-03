@@ -10559,3 +10559,48 @@ transform-box: fill-box;
     /* cursor: zoom-out; */
     cursor: pointer;
 }
+
+.hero-image {
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)), url("/assets/img/boombox.png");
+  
+    /* Set a specific height */
+    height: 100%;
+  
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+
+  #speakerSound1{
+      
+    animation: tweeder 1s infinite ease;
+    transform-origin: 94% 46% 0
+    
+  }
+
+  #speakerSound2{
+      
+    animation: tweeder 1s infinite ease;
+    transform-origin: 61% 46% 0
+    
+  }
+
+  @keyframes tweeder{
+      
+    0%{ 
+        transform: scale(1.0) }
+    15%{
+        transform: scale(1.5) }
+    35%{
+        transform: scale(1.0)}
+    70%{
+        transform: scale(1.5) }
+    90%{
+        transform: scale(1.0) }
+    100%{
+        transform: scale(1.0) }
+  }

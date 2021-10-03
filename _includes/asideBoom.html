@@ -1,0 +1,115 @@
+<section class="bg-dark text-white {{ section.background_style }}">
+<section class="bg-dark text-white {{ section.background_style }}">
+  <div class="bikeDiv">
+    <svg class="wholeBike" width="300" height="150" version="1.1" viewBox="0 0 320 180"
+      xmlns="http://www.w3.org/2000/svg">
+      <defs>
+
+        <filter id="glow">
+          <fegaussianblur class="blur" result="coloredBlur" stddeviation="4"></fegaussianblur>
+          <femerge>
+            <femergenode in="coloredBlur"></femergenode>
+            <femergenode in="coloredBlur"></femergenode>
+            <femergenode in="coloredBlur"></femergenode>
+            <femergenode in="SourceGraphic"></femergenode>
+          </femerge>
+        </filter>
+        <style>
+          .cls-1 {
+            isolation: isolate;
+          }
+
+          .cls-2 {
+            fill: url(#radial-gradient);
+          }
+
+          .cls-6 {
+            mix-blend-mode: screen;
+          }
+        </style>
+      </defs>
+     
+     
+      <g id="BikeFrame" style="fill-opacity: 0; stroke-width: 2; stroke: {{ section.bikeColors.bikeFrame }}; filter: url(#glow);">
+        <g>
+          <line class="st0" x1="71.7" y1="64.2" x2="37.3" y2="106.4"/>
+          <line class="st0" x1="86" y1="109.8" x2="37.3" y2="106.4"/>
+          <line class="st0" x1="52.3" y1="35.2" x2="79.1" y2="35.2"/>
+          <line class="st1" x1="86.8" y1="111.8" x2="62.5" y2="35.2"/>
+          <line class="st1" x1="254.8" y1="109.8" x2="86" y2="109.8"/>
+          <line class="st1" x1="133.2" y1="45.2" x2="133.2" y2="109.8"/>
+          <line class="st1" x1="133.2" y1="56.9" x2="73.4" y2="65.1"/>
+          <line class="st0" x1="133.2" y1="45.2" x2="145.2" y2="45.2"/>
+        </g>
+      </g>
+      <g id="Wheels">
+        <g>
+          <path id="backWheel" style="fill-opacity: 0; stroke-width: 2; stroke: {{ section.bikeColors.backWheel }}; filter: url(#glow);"class="st2" d="M39.5,143.5C17.7,143.5,0,125.8,0,104
+            c0-21.8,17.7-39.5,39.5-39.5S78.9,82.2,78.9,104c0,0,0,0,0,0C78.9,125.8,61.3,143.5,39.5,143.5z M39.5,75.9
+            C24,75.9,11.4,88.5,11.4,104s12.6,28.1,28.1,28.1s28.1-12.6,28.1-28.1c0,0,0,0,0,0C67.6,88.5,55,75.9,39.5,75.9z"/>
+          <path id="frontWheel" style="fill-opacity: 0; stroke-width: 2; stroke: {{ section.bikeColors.frontWheel }}; filter: url(#glow);" class="st3" d="M256.9,147
+            c-21.8,0-39.5-17.7-39.5-39.5s17.7-39.5,39.5-39.5c21.8,0,39.5,17.7,39.5,39.5l0,0C296.3,129.3,278.7,147,256.9,147L256.9,147z
+             M256.9,79.4c-15.5,0-28.1,12.6-28.1,28.1s12.6,28.1,28.1,28.1s28.1-12.6,28.1-28.1v0C285,92,272.4,79.5,256.9,79.4z"/>
+          <path id="frontRim" class="st4" d="M39.5,139.8c-19.8,0-35.8-16-35.8-35.8
+            s16-35.8,35.8-35.8s35.8,16,35.8,35.8C75.3,123.8,59.3,139.8,39.5,139.8z M39.5,71.1C21.3,71.1,6.6,85.8,6.6,104
+            s14.7,32.9,32.9,32.9s32.9-14.7,32.9-32.9c0,0,0,0,0,0C72.4,85.8,57.6,71.1,39.5,71.1z"/>
+          <path id="backRim" class="st4" d="M256.9,143.6c-19.8,0-35.8-16-35.8-35.8
+            s16-35.8,35.8-35.8c19.8,0,35.8,16,35.8,35.8c0,0,0,0,0,0C292.7,127.5,276.6,143.6,256.9,143.6z M256.9,74.9
+            c-18.2,0-32.9,14.7-32.9,32.9s14.7,32.9,32.9,32.9s32.9-14.7,32.9-32.9c0,0,0,0,0,0C289.7,89.6,275,74.9,256.9,74.9z"/>
+          <g>
+            <g class="frontSpokes" style="fill-opacity: 0; stroke-width: 2; stroke: {{ section.bikeColors.frontSpokes }}; filter: url(#glow);">
+              <path class="st5" d="M256.9,135.8V79.4"/>
+              <path class="st5" d="M228.7,107.6h56.4"/>
+              <path class="st5" d="M236.9,87.7l39.9,39.9"/>
+              <path class="st5" d="M276.8,87.7l-39.9,39.9"/>
+            </g>
+            <circle class="st6" cx="256.8" cy="107.7" r="3.4" stroke-linejoin="round" stroke-width="3"
+            style="paint-order:stroke fill markers"/>
+          </g>
+          <g class="backSpokes" style="fill-opacity: 0; stroke-width: 2; stroke: {{ section.bikeColors.backSpokes }}; filter: url(#glow);">
+           
+            <g stroke-width="2px">
+              <path class="st8" d="M39.5,75.9v56.4"/>
+              <path class="st8" d="M67.7,104.1H11.3"/>
+              <path class="st8" d="M59.4,124L19.5,84.2"/>
+              <path class="st8" d="M19.6,124l39.9-39.9"/>
+            </g>
+          </g>
+        </g>
+      </g>
+      <g id="StaticBoomBox" >
+        <g >
+          <rect  fill={{ section.bikeColors.boomBox }} x="159.1" class="st9" width="178" height="114"/>
+
+        </g>
+      </g>
+
+      <g id="StaticBoomBox2">
+        <g>
+   
+          <path style="fill-opacity: 0; stroke-width: 2; stroke: {{ section.bikeColors.lowerCircles }}; filter: url(#glow);" class="st1" d="M196.6,103.5L196.6,103.5c-12.4,0-22.4-10-22.4-22.4v0c0-12.4,10-22.4,22.4-22.4h0c12.4,0,22.4,10,22.4,22.4
+            v0C219,93.5,209,103.5,196.6,103.5z"/>
+          <path style="fill-opacity: 0; stroke-width: 2; stroke: {{ section.bikeColors.lowerCircles }}; filter: url(#glow);"class="st1" d="M302.1,103.5L302.1,103.5c-12.4,0-22.4-10-22.4-22.4v0c0-12.4,10-22.4,22.4-22.4h0c12.4,0,22.4,10,22.4,22.4
+            v0C324.5,93.5,314.4,103.5,302.1,103.5z"/>
+          <rect style="fill-opacity: 0; stroke-width: 2; stroke: {{ section.bikeColors.cassette }}; filter: url(#glow);" x="226" y="50.8" class="st10" width="46.6" height="27.5"/>
+          <path style="fill-opacity: 0; stroke-width: 2; stroke: {{ section.bikeColors.upperCircles }}; filter: url(#glow);" class="st11" d="M318.2,32.2L318.2,32.2c-7.4,0-13.4-6-13.4-13.4v0c0-7.4,6-13.4,13.4-13.4h0c7.4,0,13.4,6,13.4,13.4v0
+            C331.6,26.2,325.6,32.2,318.2,32.2z"/>
+          <path style="fill-opacity: 0; stroke-width: 2; stroke: {{ section.bikeColors.upperCircles }}; filter: url(#glow);" class="st11" d="M178.5,32.2L178.5,32.2c-7.4,0-13.4-6-13.4-13.4v0c0-7.4,6-13.4,13.4-13.4h0c7.4,0,13.4,6,13.4,13.4v0
+            C191.9,26.2,185.9,32.2,178.5,32.2z"/>
+        </g>
+      </g>
+      <g id="DynamicBoomBox">
+        <g fill={{ section.bikeColors.sound }}>
+          <path id="speakerSound1" d="M302.1,94.6L302.1,94.6c-7.4,0-13.4-6-13.4-13.4v0c0-7.4,6-13.4,13.4-13.4h0c7.4,0,13.4,6,13.4,13.4v0
+            C315.5,88.6,309.5,94.6,302.1,94.6z"/>
+          <path id="speakerSound2" d="M196.6,94.6L196.6,94.6c-7.4,0-13.4-6-13.4-13.4v0c0-7.4,6-13.4,13.4-13.4h0c7.4,0,13.4,6,13.4,13.4v0
+            C210,88.6,204,94.6,196.6,94.6z"/>
+        </g>
+      </g>
+    
+
+    
+    </svg>
+  </div>
+
+</section>
