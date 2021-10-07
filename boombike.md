@@ -4,7 +4,7 @@ header:
   titleUpper: BoomBike
 
   text: >
-    An interactive LED art project blending light, sound, and motion. The BoomBike will be designed and built by the team that created the BrightBikes Pixel 1600 bike and the BrightBikes Neon bike as well as many other projects exhibited at community events throughout Central Florida.
+    An interactive LED art project blending light, sound, and motion. The BoomBike will debut at the IMMERSE Festival in Orlando, FL on October 15th & 16th.
 image: assets/img/portfolio/carousel/1.jpg
 
 
