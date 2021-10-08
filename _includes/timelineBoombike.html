@@ -1,0 +1,69 @@
+ <section class="page-section {{ section.background_style }}" id="{{ section.section_id }}"> 
+  <!--   <div class="container">
+    <h2 class="text-center mt-0">{{ section.title }}</h2>
+    <p class="text-white-50">{{ section.text }}</p>
+    <hr class="divider my-4" />
+    <div class="row">
+        {% for action in section.actions %}
+        
+        <div id="videoHead" class="col-12 col-sm-12 ">
+        <div id="videoDiv">
+          <iframe id="videoFrame"
+            src="{{ action.url}}"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          >
+          </iframe>
+          <br /> <br />
+          </div>
+        </div>
+
+        <div style="display: block; margin: 0 auto; width: 60%; text-align: center;">
+          <div class="timeline-heading">
+            <h4>{{ action.title | markdownify }}</h4>
+          </div>
+          <div class="timeline-body text-align: center;">
+            <p class="text-white-50">{{ action.text | markdownify }}</p>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+  </div> -->
+  <div id="portfolio" class="{{ section.background_style }}" >
+    <div class="container-fluid p-0">
+      <div class="row no-gutters">
+        {% for proj in section.projects %}
+        <div class="col-lg-6 col-sm-6">
+          <a class="portfolio-box" onclick="videoModal( '{{ proj.url }}')">
+
+            <img class="img-fluid" src="assets/img/portfolio/thumbnails/{{ proj.icon }}" alt="" />
+            <div class="portfolio-box-caption">
+              <div class="project-category text-white-50">
+                {{ proj.title }}
+              </div>
+              <div class="project-name">
+                {{ proj.text }}
+              </div>
+            </div>
+          </a>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <iframe id="videoFrame" width="100%" height="100%" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+
+
+ </section> 
