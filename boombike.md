@@ -60,6 +60,53 @@ sections:
         icon: boombike-immerse.jpg
         url: '#'
 
+  - type: asideBoom.html
+    section_id: bike1
+    bikeColors:
+      bikeFrame: "#fff"
+      frontWheel: "#acacac"
+      frontSpokes: "#2e0557"
+      frontRim: "#fff"
+      backWheel: "#2e0557"
+      backSpokes:  "#acacac"
+      backRim: "#fff"
+      boomBox: "#138bb9"
+      upperCircles: "#fff"
+      lowerCircles: "black"
+      sound: "#2bd1fc"
+      cassette: "#2e0557"
+
+  - type: timelineBoombike.html
+    section_id: timeline
+    title: How-to
+    background_style: bg-dark text-primary
+#    last_image: assets/img/portfolio
+    projects:
+    - title: We Are Making a Giant BoomBox Bicycle!
+      text: We've been making crazy LED bikes, and we've been wanting to make a giant boombox...so why not make a Giant BoomBox Bicycle? That is EXACTLY what we are doing!
+      icon: Making-Bike-Boom.png
+      url: 'https://www.youtube.com/embed/lT4nIsSO7Mg'
+    - title: The Audio Secrets for the Boom Bike
+      text: Unboxing awesome audio equipment donated to us from Roswell Marine and discussing layout of the speakers and power system.
+      icon: Audio-Secrets-Boom-Bike.png
+      url: 'https://www.youtube.com/embed/xpJOEF10sNc'
+
+
+  - type: members.html
+    section_id: members
+    title: Community Partners
+    background_style: bg-info text-white
+    members:
+      - title: <br /> Roswell Marine
+        text: Beautiful and functional products that make boating and watersports a little more enjoyable each year.
+        image: assets/img/logos/Roswell-Marine-Logo.png
+        url: 'https://www.roswellmarine.com/'
+      - title: <br /> MiniDSP
+        text: MiniDSP and DSP4YOU are technology companies focusing on Digital Signal Processing platforms (DSP) for a wide range of applications. 
+        image: assets/img/logos/miniDSP.png
+        url: 'https://www.minidsp.com/'
+
+
 
 
 
